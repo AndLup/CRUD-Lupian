@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Satisfy', cursive;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 13vh;
+    z-index: 100;
+}
+#titulo{
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+
+.inicio{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.agregar{
+    position: fixed;
+    width: 80%;
+    height: 12vh;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0);
+    top: 8rem;
+    border-radius: .5rem;
+    
+}
+
+#txtEntrada{
+    width: 60%;
+    height: 60%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+}
+#txtEntrada::placeholder{
+    color: aliceblue;
+    letter-spacing: .15rem;
+}
+
+#btnAgregar{
+    width: 15%;
+    height: 80%;
+    margin-left: 3rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: .2rem;
+    transition: transform .5s;
+}
+#btnAgregar:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: yellow;
+}
+
+.elementos{
+    position: absolute;
+    width: 80%;
+    height: 55%;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+    top: 15rem;
+}
+
+#footer{
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    bottom: 0;
+}
+
+#footer p{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
