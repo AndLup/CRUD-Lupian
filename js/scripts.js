@@ -6,7 +6,10 @@ const btnAgregar = document.querySelector('#btnAgregar');
 
 
 btnAgregar.addEventListener('click', ()=>{
-    const divElemento = document.createElement('DIV');
+    if(entrada.value == ''){
+        alert('Ingresa un elemento')
+    }else{
+        const divElemento = document.createElement('DIV');
     divElemento.classList.add('elemento')
     
     const crearParrafo = document.createElement('P');
@@ -29,5 +32,10 @@ btnAgregar.addEventListener('click', ()=>{
     divElemento.appendChild(crearBotonEditar)
     divElemento.appendChild(crearBotonBorrar)
 
-    console.log(entrada.value)
+    entrada.value = "";
+
+    crearBotonEditar.addEventListener('click', () =>{
+        
+    })
+    }
 })
