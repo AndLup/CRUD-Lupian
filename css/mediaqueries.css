@@ -27,9 +27,9 @@
     }
 
     .contenedor-three{
-        width: 5vw;
-        height: 5vh;
-        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        
     }
 
     .agregar{
@@ -39,7 +39,7 @@
     }
     #txtEntrada{
         width: 90vw;
-        height: 45%;
+        height: 65%;
         font-size: 1.4rem;
         letter-spacing: 0rem;
     }
@@ -52,6 +52,18 @@
 
     .lienzo{
         width: 95vw;
+    }
+
+    .elemento{
+        height: 10%;
+        font-size: 1.5rem;
+    }
+    .btnEditar{
+        font-size: 1.5rem;
+    }
+    
+    .btnBorrar{
+        font-size: 1.5rem;
     }
 
     #footer p{

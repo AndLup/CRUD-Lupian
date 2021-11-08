@@ -93,24 +93,30 @@ body{
     border-radius: 1rem;
     background-color: rgba(0, 255, 255, .1);
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .txt{
     margin: auto;
-    width: 60%;
+    width: 70%;
     height: 80%;
     color: white;
     background-color: rgba(0, 0, 0, .5);
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnEditar{
     margin: auto;
-    width: 15%;
+    width: 13%;
     height: 80%;
     background-color: rgba(0, 0, 0, .1);
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: none;
     color: white;
     font-family: 'Teko', sans-serif;
@@ -123,10 +129,10 @@ body{
 
 .btnBorrar{
     margin: auto;
-    width: 15%;
+    width: 13%;
     height: 80%;
     background-color: rgba(0, 0, 0, .1);
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: none;
     color: white;
     font-family: 'Teko', sans-serif;
