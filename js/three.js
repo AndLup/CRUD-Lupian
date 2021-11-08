@@ -17,8 +17,7 @@ function inicializa(){
 
     geometria = new THREE.IcosahedronGeometry(100, 3);
 
-    material = new THREE.MeshNormalMaterial({
-        color: 'yeloow',
+    material = new THREE.MeshNormalMaterial({  
         wireframe: true,
         wireframeLinewidth: 40
     })

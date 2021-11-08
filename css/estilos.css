@@ -21,7 +21,7 @@ body{
 }
 #titulo{
     color: aliceblue;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 
@@ -69,22 +69,74 @@ body{
     font-size: 2.5rem;
     color: rgb(255, 255, 255);
     letter-spacing: .2rem;
-    transition: transform .5s;
+    transition: transform .3s;
 }
 #btnAgregar:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
     cursor: pointer;
     color: yellow;
 }
 
-.elementos{
+.lienzo{
     position: absolute;
     width: 80%;
     height: 55%;
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(5px);
     top: 15rem;
+    flex-direction: column;
 }
+
+.elemento{
+    width: 95%;
+    height: 15%;
+    border-radius: 1rem;
+    background-color: rgba(0, 255, 255, .1);
+    margin: auto;
+}
+
+
+.txt{
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 1.5rem;
+}
+
+.btnEditar{
+    margin: auto;
+    width: 15%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, .1);
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+    font-family: 'Teko', sans-serif;
+}
+.btnEditar:hover{
+    transform: scale(1.03);
+    color: yellow;
+    cursor: pointer;
+}
+
+.btnBorrar{
+    margin: auto;
+    width: 15%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, .1);
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+    font-family: 'Teko', sans-serif;
+}
+.btnBorrar:hover{
+    transform: scale(1.03);
+    color: yellow;
+    cursor: pointer;
+}
+
 
 #footer{
     width: 100%;
