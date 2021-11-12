@@ -32,9 +32,7 @@ btnAgregar.addEventListener('click', ()=>{
         divElemento.appendChild(crearParrafo)
         divElemento.appendChild(crearBotonEditar)
         divElemento.appendChild(crearBotonBorrar)
-
-        guardarLocal(entrada.value);
-        
+       
 
     
     //logica de negocio 
@@ -43,6 +41,7 @@ btnAgregar.addEventListener('click', ()=>{
         elemento:entrada.value
     
     }
+    guardarLocal(objDa);
 
     
 
@@ -50,7 +49,8 @@ btnAgregar.addEventListener('click', ()=>{
 
     crearBotonEditar.addEventListener('click', () =>{
         
-        var objDato  =  JSON.parse(localStorage.getItem("datos"));
+        var datos  =  localStorage.getItem("datos");
+        var objDato  =  JSON.parse(datos);
         entrada.value = objDato.elemento;
 
     });
@@ -62,7 +62,7 @@ btnAgregar.addEventListener('click', ()=>{
     //Boton Borrar
     crearBotonBorrar.addEventListener('click', ()=>{
         let uid = crearParrafo.getAttribute('id');
-        localStorage.removeItem("dato");
+        localStorage.removeItem("datos");
         divElemento.remove(uid);
         
         
@@ -72,8 +72,8 @@ btnAgregar.addEventListener('click', ()=>{
 });
 
 
-function guardarLocal(dato){
-    localStorage.setItem("dato", dato);
+function guardarLocal(objDa){
+    localStorage.setItem("datos",JSON.stringify(objDa));
 }
 
 
