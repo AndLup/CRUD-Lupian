@@ -3,12 +3,19 @@ const entrada = document.querySelector('#txtEntrada');
 const btnAgregar = document.querySelector('#btnAgregar');
 let count = 0;
 
+const arr = [];
+
 
 
 btnAgregar.addEventListener('click', ()=>{
     if(entrada.value == ''){
         alert('Ingresa un elemento')
     }else{
+
+        arr.push(entrada.value)
+        localStorage.setItem('storage', JSON.stringify(arr));
+
+
         const divElemento = document.createElement('DIV');
         divElemento.classList.add('elemento')
         
@@ -36,12 +43,10 @@ btnAgregar.addEventListener('click', ()=>{
 
     
     //logica de negocio 
-    var objDa = {
-        
-        elemento:entrada.value
-    
-    }
-    guardarLocal(objDa);
+     var objDa = {
+         elemento:entrada.value
+     }
+    //guardarLocal(objDa);
 
     
 
@@ -49,14 +54,18 @@ btnAgregar.addEventListener('click', ()=>{
 
     crearBotonEditar.addEventListener('click', () =>{
         
-        var datos  =  localStorage.getItem("datos");
+
+        var datos  =  localStorage.getItem('storage');
         var objDato  =  JSON.parse(datos);
-        entrada.value = objDato.elemento;
+        entrada.value = objDato;
+        
+        
+
+        let uid = crearParrafo.getAttribute('id');
+        localStorage.removeItem('storage');
+        divElemento.remove(uid);
 
     });
-
-    
-   
 
 
     //Boton Borrar
@@ -65,15 +74,14 @@ btnAgregar.addEventListener('click', ()=>{
         localStorage.removeItem("datos");
         divElemento.remove(uid);
         
-        
     })
 
     }
 });
 
 
-function guardarLocal(objDa){
-    localStorage.setItem("datos",JSON.stringify(objDa));
-}
+// function guardarLocal(objDa){
+//     localStorage.setItem("datos",JSON.stringify(objDa));
+// }
 
 

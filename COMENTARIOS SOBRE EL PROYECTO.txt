@@ -1,0 +1,25 @@
+Repositorio Git-Hub
+https://github.com/AndLup/CRUD-Lupian
+<---- Comentario ---->
+El contenido se encuentra en Branch Master
+<---- Comentario ---->
+
+Página de Git Hub Pages
+https://github.com/AndLup/CRUD-Lupian/tree/master
+
+
+<---- Comentarios Adicionales ---->
+
+1.- Falta Mejorar la interacción cuando el diseño se hace responsivo,
+ya que por sí solo no se efectua el cambio, sino que, hay que recargar o refrescar 
+la pagina cuando ésta se encuentre en un punto de ruptura de 480px,
+que es lo definido en las mediaqueries. 
+Ésto se debe a la librería THREE utilizada para generar la animación de esfera, ya que en
+las pruebas donde sólo ponía el fondo negro, sí se efectuaba el cambio en el punto de ruptura establecido.
+
+2.- Trabajar en la edición de los componentes al momento de editarlos, ya que no se actualizan en la misma posición. Por el contrario, crea un nuevo componente para agregarlo. 
+
+3.-Los datos en el local storage, no supe cómo ir guardando varios, sólo se van sobreescribiendo. 
+
+sin más, espero su retroalimentación y deseo pueda ayudarme a mejorar el proyecto. 
+Muchas Gracias. 
